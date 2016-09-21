@@ -1,3 +1,7 @@
+$dark-grey: 0px 5px 5px rgba(0,0,0,.25);
+
+
+
 .hero {
   font-family: Roboto, serif;
   text-align: center;
@@ -17,13 +21,13 @@
 }
 
 #intro h1  {
-  text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+  text-shadow: $dark-grey;
   font-size: 72px;
   line-height: 55px;
 }
 
 #intro h5 {
-  text-shadow: 0px 5px 5px rgba(0,0,0,.25);
+  text-shadow: $dark-grey;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700;
@@ -201,7 +205,7 @@
     width: 100%;
   }
    .col-md-4 {
-     width: : 100%;
+     width:sa 100%;
      }
    .col-md-4 img {
      width: 100%;
