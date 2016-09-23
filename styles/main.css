@@ -1,5 +1,5 @@
 .hero {
-  font-family: Roboto, serif;
+  font-family: "Roboto", serif;
   text-align: center;
   min-height: 800px;
   background-size: cover;
@@ -8,25 +8,26 @@
   align-items: center;
   justify-content: center;
   flex-direction: column; }
+  .hero h2 {
+    margin: 100px 50px;
+    font-size: 40px;
+    line-height: 40px; }
+  .hero.landscape {
+    color: white; }
+  .hero.bridge {
+    background-image: url("../img/bridge/full-width.jpg");
+    width: 100%; }
 
-.hero h2 {
-  margin: 100px 50px;
-  font-size: 40px;
-  line-height: 40px; }
-
-#intro h1 {
+#intro h1, #intro h5 {
   text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+  text-align: center; }
+#intro h1 {
   font-size: 72px;
   line-height: 55px; }
-
 #intro h5 {
-  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: 700; }
-
-.hero.landscape {
-  color: white; }
 
 .cta {
   background-color: black;
@@ -38,9 +39,8 @@
   border: none;
   cursor: pointer;
   border-radius: 4px; }
-
-:hover.cta {
-  background-color: #00cfff; }
+  .cta:hover {
+    background-color: #00cfff; }
 
 #about {
   min-height: 0; }
@@ -50,61 +50,50 @@
   padding: 20px;
   text-transform: uppercase;
   text-align: right; }
+  .left-col h2 {
+    margin: 0px 0px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 55px; }
 
 .right-col {
   padding: 20px;
   text-align: right; }
+  .right-col h5 {
+    font-size: 24px;
+    line-height: 30px; }
 
-.left-col h2 {
-  margin: 0px 0px;
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 55px; }
-
-.right-col h5 {
-  font-size: 24px;
-  line-height: 30px; }
-
-.gallery {
+#gallery {
   background-color: #eefdf9; }
-
-.gallery.container {
-  padding: 0px;
-  margin: 0px; }
+  #gallery .container {
+    padding: 0px;
+    margin: 0px; }
 
 .col-md-4 {
   overflow: hidden;
   padding-top: 0px 5px 10px 5px; }
-
-.col-md-4 img {
-  height: 100%;
-  max-width: 390px;
-  max-height: 380px; }
-
-.bridge img {
-  width: 100%; }
+  .col-md-4 img {
+    height: 100%;
+    max-width: 390px;
+    max-height: 380px; }
 
 #contact {
   text-align: center; }
-
-#contact p {
-  text-align: center;
-  font-size: 24px;
-  max-width: 740px;
-  margin-bottom: 40px; }
+  #contact p {
+    text-align: center;
+    font-size: 24px;
+    max-width: 740px;
+    margin-bottom: 40px; }
 
 #social {
   padding: 20px; }
-
-#social a {
-  margin: 0px 10px 0px 10px;
-  text-decoration: none; }
-
-#social img {
-  height: 20px; }
-
-:hover#social img {
-  opacity: .5; }
+  #social a {
+    margin: 0px 10px 0px 10px;
+    text-decoration: none; }
+  #social img {
+    height: 20px; }
+    #social img:hover {
+      opacity: .5; }
 
 #footer {
   height: 40px;
@@ -115,29 +104,26 @@
   display: flex;
   flex-direction: row;
   align-items: center; }
-
-#footer.footer-item {
-  max-width: 100px;
-  text-align: left; }
-
-#footer a {
-  margin-right: 20px;
-  margin-left: 5px;
-  padding: 0px;
-  font-size: 16px;
-  color: black;
-  line-height: 40px; }
+  #footer .footer-item {
+    max-width: 100px;
+    text-align: left; }
+  #footer a {
+    margin-right: 20px;
+    margin-left: 5px;
+    padding: 0px;
+    font-size: 16px;
+    color: black;
+    line-height: 40px; }
 
 #copyright {
   margin: auto;
   color: #00e2ac;
   text-align: right; }
+  #copyright span {
+    display: flex;
+    justify-content: flex-end; }
 
-#copyright span {
-  display: flex;
-  justify-content: flex-end; }
-
-@media (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   #intro {
     min-height: 640px; }
 
@@ -148,20 +134,18 @@
   #footer {
     margin-left: 20px;
     margin-right: 20px; }
-
-  #footer h4 {
-    padding-right: 20px; } }
-@media (max-width: 992px) {
+    #footer h4 {
+      padding-right: 20px; } }
+@media only screen and (max-width: 992px) {
   .row {
     width: 100%; }
 
   .col-md-4 {
     width: 100%; }
-
-  .col-md-4 img {
-    width: 100%;
-    height: auto;
-    max-width: 992px;
-    max-height: 900px; } }
+    .col-md-4 img {
+      width: 100%;
+      height: auto;
+      max-width: 992px;
+      max-height: 900px; } }
 
 /*# sourceMappingURL=main.css.map */
