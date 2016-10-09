@@ -1,10 +1,10 @@
 function init() {
  $( document).ready(function (){
-  $('#close-btn').click(function (){
+  $('#close-btn').click(function(){
     $('.sidebar-wrapper').toggleClass('open');
   });
 
-  $('#hamburger').click(function (){
+  $('#hamburger').click(function(){
     $('.sidebar-wrapper').toggleClass('open');
   });
 });
@@ -13,7 +13,7 @@ function init() {
 function getWeather(){
   $.ajax({
     url: "http://api.wunderground.com/api/d9c30ffeef2efc50/geolookup/conditions/q/94609.json",
-    dataType: 'jsonp',
+    dataType: "jsonp",
     success: function (response){
       var conditions = response.current_observation.weather;
       loadImage(conditions);
@@ -26,7 +26,7 @@ function getTimeOfDay(){
   var hours = time.getHours ();
   var timeOfDay ;
 
-  if (hours > 17) {
+  if(hours > 17) {
     timeOfDay = 'night';
   } else if (hours > 12) {
     timeOfDay = 'afternoon';
@@ -50,9 +50,10 @@ function loadImage(conditions){
   } else {
     conditions = 'cloudy';
   }
+  }
  imageSRC = imageSRC + conditions + '-'+ timeOfDay + '.jpg';
  $('#intro').css('background-image', 'url('+ imageSRC + ')');
-}
+
 }
 
 
