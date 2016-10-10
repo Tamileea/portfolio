@@ -66,12 +66,12 @@
 #gallery {
   background-color: #eefdf9; }
   #gallery .container {
-    padding: 0px;
-    margin: 0px; }
+    padding: 0;
+    margin: 0; }
 
 .col-md-4 {
   overflow: hidden;
-  padding: 0px 5px 10px 5px; }
+  padding: 0 5px 10px 5px; }
   .col-md-4 img {
     height: 100%;
     max-width: 390px;
@@ -142,7 +142,6 @@
     width: 100%; }
     .col-md-4 img {
       width: 100%;
-      height: auto;
       max-width: 992px;
       max-height: 900px; } }
 .sidebar-wrapper {
@@ -170,6 +169,13 @@
     margin-left: 10px; }
   .sidebar-wrapper.open {
     width: 320px !important; }
+
+.sidebar-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 #close-btn {
   margin-left: 30px;

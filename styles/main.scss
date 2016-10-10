@@ -245,6 +245,14 @@ $green-white: #eefdf9;
   }
 }
 
+.sidebar-links {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 #close-btn {
   margin-left: 30px;
   margin-top: 10px;
